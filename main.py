@@ -1,6 +1,6 @@
 """Punto de entrada: calculadora interactiva de consola."""
 
-from calculadora.core import calcular
+from calculadora.core import ExpresionInvalida, calcular
 
 
 def main() -> None:
@@ -16,8 +16,12 @@ def main() -> None:
             continue
         try:
             print(calcular(texto))
-        except Exception as error:  # v1.0: captura todo, sin distinguir causas
-            print(f"Error: {error}")
+        except ExpresionInvalida as error:
+            print(f"Expresion no valida: {error}")
+        except ZeroDivisionError:
+            print("Error: division entre cero")
+        except OverflowError:
+            print("Error: resultado demasiado grande")
 
 
 if __name__ == "__main__":

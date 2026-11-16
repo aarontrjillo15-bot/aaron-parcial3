@@ -2,8 +2,8 @@
 
 Calculadora de consola en Python usada como caso practico de **desarrollo seguro con Git y GitHub**.
 
-> Version 1.0: primera version funcional. Contiene una vulnerabilidad **intencional**
-> (uso de `eval`) para mostrar como GitHub la detecta. Ver las versiones siguientes.
+> Version 1.1: se reemplazo `eval()` por un evaluador basado en `ast` con lista blanca de
+> operadores. Corrige la vulnerabilidad CWE-95 de la version 1.0.
 
 ## Uso
 
