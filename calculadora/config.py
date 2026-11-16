@@ -1,7 +1,5 @@
-"""Configuracion de la calculadora (rama de demostracion).
+"""Configuracion de la calculadora: la clave se lee del entorno, nunca del codigo."""
 
-Durante la demo se pega aqui un token FALSO para mostrar como Push Protection
-bloquea el push. La forma correcta se muestra despues: leer de variables de entorno.
-"""
+import os
 
-API_KEY = "REEMPLAZAR_CON_TOKEN_FALSO"
+API_KEY = os.environ.get("API_KEY", "")
