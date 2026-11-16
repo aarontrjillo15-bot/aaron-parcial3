@@ -1,0 +1,4 @@
+# Dependencia con version antigua A PROPOSITO, solo para la demo de Dependabot.
+# El programa NO la importa; existe para que GitHub muestre alertas (CVE) y abra
+# un Pull Request con la version corregida.
+requests==2.19.1
