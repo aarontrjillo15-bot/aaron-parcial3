@@ -38,3 +38,5 @@ seguro (`calculadora/core.py`, sin `eval`): los botones solo pueden producir tec
 | Politica de reporte | `SECURITY.md` |
 
 La guia paso a paso de la demostracion esta en [`DEMO.md`](DEMO.md).
+
+Demo en vivo: cambio de prueba.
